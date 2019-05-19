@@ -29,6 +29,8 @@ div.onmousedown = function(aa){
     }else{
         painting = true
         lastPoint = {"x":x,"y":y}
+        console.log(lastPoint);
+        
         
     }
 }
@@ -44,8 +46,12 @@ div.onmousemove = function(aa){
         if(painting){
         
         var newPoint = {"x":x,"y":y}
+        console.log(newPoint)
+        
         drawLine(lastPoint.x,lastPoint.y,newPoint.x,newPoint.y)
         lastPoint = newPoint
+        console.log(lastPoint)
+        
         }
     }
 }
@@ -130,6 +136,7 @@ download.onclick = function(){
 }
 
 if(document.body.ontouchstart !== undefined){
+
 div.ontouchstart = function(aa){
     console.log('开始')
     var x = aa.touches[0].clientX
@@ -139,13 +146,11 @@ div.ontouchstart = function(aa){
         content.clearRect(x,y,10,10)
     }else{
         painting = true
-        var lastPoint = {"x":x,"y":y}
-        
+        lastPoint = {"x":x,"y":y}
+        console.log(lastPoint)
     }
-    
 }
-
-div.ontouchmove = function(aa){
+   div.ontouchmove = function(aa){
     console.log('别摸我')
     var x = aa.touches[0].clientX
     var y = aa.touches[0].clientY
@@ -166,6 +171,5 @@ div.ontouchmove = function(aa){
 div.ontouchend = function(aa){
     console.log('结束')
      painting = false
-}
-
+    } 
 }

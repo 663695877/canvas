@@ -89,11 +89,11 @@ ul.color li:nth-child(3){
 
 .size{
     position: fixed;
-    right: 40px;
-    top: 10px;
+    right: 30px;
+    top: -20px;
 }
 .size li{
-    margin: 40px 0;
+    margin: 20px 0;
     list-style: none;
     
 }
