@@ -28,7 +28,7 @@ div.onmousedown = function(aa){
         content.clearRect(x,y,10,10)
     }else{
         painting = true
-        var lastPoint = {"x":x,"y":y}
+        lastPoint = {"x":x,"y":y}
         
     }
 }
