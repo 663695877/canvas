@@ -1,0 +1,112 @@
+*{
+    margin：0;
+    padding0;
+}
+body{
+    margin: 0;
+}
+#xx{
+    background: green;
+    display: block;
+}
+button{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+html{
+
+}
+
+.actions{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    
+}
+
+.actions #eraser{
+    height: 4em;
+    width: 4em;
+     transition: all 0.3s;
+    
+}
+.actions #brush{
+    height: 4em;
+    width: 4em;
+    transform: scale(0.7);
+   
+}
+.actions #clear{
+    height: 4em;
+    width: 4em;
+    transform: scale(0.7);
+   
+}
+.actions #download{
+    height: 4em;
+    width: 4em;
+    transform: scale(0.7);
+   
+}
+
+.active{
+    
+    transform: scale(1.5);
+    
+}
+
+.color{
+    
+    
+    position: fixed;
+    top: 70px;
+    left:-8px; 
+}
+
+ul.color li{
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    
+    border-radius: 2em;
+    margin: 15px 0;
+    transition: all 0.3s;
+    
+}
+
+ul.color li:nth-child(1){
+    background: red;
+}
+ul.color li:nth-child(2){
+    background:yellow;
+}
+ul.color li:nth-child(3){
+    background:blue;
+}
+
+.size{
+    position: fixed;
+    right: 40px;
+    top: 10px;
+}
+.size li{
+    margin: 40px 0;
+    list-style: none;
+    
+}
+
+.size .thin{
+    height: 0;
+    width: 40px;
+    border-top:5px solid black;
+}
+
+.size .thick{
+    height: 0;
+    width: 40px;
+    border-top :10px solid black;
+    font-weight: bold;
+}
