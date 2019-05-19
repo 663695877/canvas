@@ -173,3 +173,4 @@ div.ontouchend = function(aa){
      painting = false
     } 
 }
+

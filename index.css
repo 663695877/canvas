@@ -90,7 +90,7 @@ ul.color li:nth-child(3){
 .size{
     position: fixed;
     right: 30px;
-    top: -20px;
+    top: -8px;
 }
 .size li{
     margin: 20px 0;
